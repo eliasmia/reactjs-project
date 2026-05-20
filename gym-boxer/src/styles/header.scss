@@ -1,0 +1,168 @@
+
+.header {
+    position: fixed;
+    z-index: 1000;
+    top: 0;
+    left: 0;
+    width: 100%;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+} {
+    position: fixed;
+    z-index: 1000;
+    top: 0;
+    left: 0;
+    width: 100%;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.header-top {
+    padding: 15px;
+}
+
+.top-contact ul li {
+    padding: 0 20px 0 0;
+    display: inline-block;
+    font-size: 15px;
+}
+
+.top-contact ul li:first-child {
+    border-right: 1px solid #fff;
+    margin-right: 20px;
+}
+
+.top-contact ul li a {
+    color: #fff;
+}
+
+.top-social {
+    text-align: right;
+}
+
+.top-social ul li {
+    display: inline-block;
+    margin-left: 15px;
+}
+
+.top-social ul li a {
+    color: #ffffff;
+    padding: 0 5px;
+}
+
+.navbar-wrapper {
+    position: relative;
+    display: flex;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    height: 70px;
+    width: 100%;
+    -webkit-transition: height 0.3s;
+    -moz-transition: height 0.3s;
+    -ms-transition: height 0.3s;
+    -o-transition: height 0.3s;
+    transition: height 0.3s;
+    z-index: 999;
+}
+
+.sticky-wrapper, .sticky-wrapper.is-sticky {
+    height: auto !important;
+}
+
+.is-sticky .header-top {
+    display: none;
+}
+.is-sticky .navbar-wrapper{
+    background: rgba(0, 0, 0, 0.9);
+    
+}
+nav.main-navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.navbar-brand {
+    float: inherit;
+    height: inherit;
+    line-height: inherit;
+    width: 160px;
+}
+.navigation .mainnav {
+    display: flex;
+    align-items: center;
+    justify-content: end;
+}
+.navigation .navbar-nav{
+    flex-direction: inherit;
+}
+.navigation ul li{
+    position: relative;
+}
+.navigation ul li a {
+    font-size: 0.875rem;
+    font-weight: 400;
+    color: #fff;
+    text-transform: uppercase;
+    padding: 28px 15px;
+    position: relative;
+    display: block;
+}
+.navigation ul li:last-child a{
+    padding-right: 0;
+}
+.navigation ul li a i {
+    margin: 0 0 0 5px;
+    font-size: 10px;
+}
+.navigation ul>li>a:after {
+    position: absolute;
+    content: "";
+    left: 0;
+    width: 0;
+    height: 3px;
+    background: #fd4766;
+    transition: .3s;
+    bottom: 1px;
+}
+.navigation ul>li>a.active:after {
+    width: 100%;
+}
+
+.navigation ul li a:hover, 
+.navigation ul li a:focus, 
+.navigation ul li a.active {
+    color: #ff5722;
+}
+
+.navigation ul ul {
+    top: 96%;
+    z-index: 999;
+    width: 220px;
+    position: absolute;
+    text-align: left;
+    background: rgba(0, 0, 0, 0.9);
+    box-shadow: 0 16px 32px rgb(0 0 0 / 10%);
+    transition: 0.3s ease-in-out !important;
+    opacity: 0;
+    visibility: hidden;
+    padding: 20px;
+}
+
+.navigation ul li:hover>ul {
+    opacity: 1;
+    visibility: visible;
+    margin-top: 0;
+}
+.navigation ul li ul li a {
+    position: relative;
+    padding: 0;
+    margin-bottom: 15px;
+    text-transform: capitalize;
+}
+.navigation ul li ul li:last-child a{
+    margin-bottom: 0;
+}
+
+.navbar-default {
+    background-color: transparent;
+    border-color: transparent;
+}
